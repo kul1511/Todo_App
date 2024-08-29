@@ -1,0 +1,110 @@
+:root{
+    --bgColor : #001d3d;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-color: var(--bgColor);
+    color: #ffc300;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 100px;
+    padding: 10px;
+}
+.main h2{
+    font-size: 55px;
+}
+.tasks{
+    padding: 5px;
+    display: flex;
+    gap: 0px;
+}
+.tasks #task{
+    width: 500px;
+    border-top-left-radius: 50px;  
+    border-bottom-left-radius: 50px; 
+    border-top-right-radius: 0px;  
+    border-bottom-right-radius: 0px;  
+    height: 30px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: #0077b6;
+}
+.tasks #task:active{
+    border: none;
+}
+.tasks #task::placeholder{
+    color: white;
+}
+.tasks button{
+    border-top-left-radius: 0px;  
+    border-bottom-left-radius: 0px; 
+    border-top-right-radius: 50px;  
+    border-bottom-right-radius: 50px;  
+    width: 100px;
+    border: none;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #039def;
+}
+.taskDiv{
+    display: flex;
+    flex-direction: column;
+}
+.taskList{
+    /* width:500px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #006070;
+    border-radius: 25px; */
+}
+.taskList p{
+    color: #190933;
+    text-align: center;
+    display: flex; 
+    /* flex-direction: column; */
+    justify-content: space-around;
+    width:500px;
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: #007f5f;
+}
+.buttons {
+    background-color: #007f5f;
+    justify-content: center;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 29px;
+    border-radius: 5px;
+}
+.buttons :hover{
+    filter: invert(100%);
+}
+.buttons  img{
+    width: 25px;
+    /* align-items: center; */
+    height: 25px;
+}
+
+/* .buttons:first-child .upBtn,
+.buttons:last-child .downBtn{
+    visibility: hidden;
+} */
